@@ -66,10 +66,10 @@ hr {
 }
 
 .menu {
-    transform: translateX(250%);
+    display: none;
     transition: 500ms;
 }
 
 .mostra {
-    transform: translateX(0);
+    display: block;
 }

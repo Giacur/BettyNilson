@@ -22,11 +22,11 @@
             <section class="container-fluid menu position-relative" id="menu">
                 <div class="row justify-content-end">
                     <section class="col-12 col-md-3 bg-black opacity-75 rounded-3 d-flex flex-column py-5 gap-3 align-items-center position-absolute">
-                        <a href="#servizi" class="text-decoration-none text-white mt-5 tasti"><strong>Servizi</strong></a>
-                        <a href="#bio" class="text-decoration-none text-white tasti"><strong>Bio</strong></a>
-                        <a href="#particolari" class="text-decoration-none text-white tasti"><strong>Particolari</strong></a>
-                        <a href="#about" class="text-decoration-none text-white tasti"><strong>Su di me</strong></a>
-                        <a href="#contatti" class="text-decoration-none text-white mb-5 tasti"><strong>Contatti</strong></a>
+                        <a href="#servizi" class="text-decoration-none text-white mt-5"><strong>Servizi</strong></a>
+                        <a href="#bio" class="text-decoration-none text-white"><strong>Bio</strong></a>
+                        <a href="#particolari" class="text-decoration-none text-white"><strong>Particolari</strong></a>
+                        <a href="#about" class="text-decoration-none text-white"><strong>Su di me</strong></a>
+                        <a href="#contatti" class="text-decoration-none text-white mb-5"><strong>Contatti</strong></a>
                     </section>
                 </div>
             </section>
@@ -439,7 +439,6 @@
     <script>
         const btn = document.querySelector('#bottone');
         const menu = document.querySelector('#menu');
-        const tasti = document.querySelector('.tasti');
 
         btn.style.cursor = "pointer";
 
@@ -447,8 +446,8 @@
             menu.classList.toggle("mostra");
         })
 
-        tasti.addEventListener('click', ()=>{
-            menu.classList.toggle("mostra");
+        menu.addEventListener('click', ()=>{
+            menu.classList.remove("mostra");
         })
        
     </script>
